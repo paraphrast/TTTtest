@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水墨古风状态栏</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scroll-container">
+        <!-- 书卷顶部装饰 -->
+        <div class="scroll-top"></div>
+        
+        <!-- 主要内容区域 -->
+        <div class="scroll-content">
+            <!-- 人物状态 -->
+            <div class="status-section character-status">
+                <div class="section-title">
+                    <span class="title-text">人物状态</span>
+                    <div class="ink-decoration"></div>
+                </div>
+                <div class="status-grid">
+                    <div class="status-item">
+                        <span class="label">姓名</span>
+                        <span class="value" id="name">李逍遥</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="label">气血</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill hp-fill" style="width: 85%"></div>
+                            <span class="value" id="hp">850/1000</span>
+                        </div>
+                    </div>
+                    <div class="status-item">
+                        <span class="label">内力</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill mp-fill" style="width: 60%"></div>
+                            <span class="value" id="mp">600/1000</span>
+                        </div>
+                    </div>
+                    <div class="status-item">
+                        <span class="label">境界</span>
+                        <span class="value realm" id="realm">筑基中期</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 名声 -->
+            <div class="status-section reputation">
+                <div class="section-title">
+                    <span class="title-text">名声</span>
+                    <div class="ink-decoration"></div>
+                </div>
+                <div class="status-grid">
+                    <div class="status-item">
+                        <span class="label">阵营</span>
+                        <span class="value" id="faction">正道</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="label">声望</span>
+                        <span class="value" id="reputation">江湖新秀</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="label">称号</span>
+                        <span class="value title" id="title">剑心通明</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 行囊 -->
+            <div class="status-section inventory">
+                <div class="section-title">
+                    <span class="title-text">行囊</span>
+                    <div class="ink-decoration"></div>
+                </div>
+                <div class="status-grid">
+                    <div class="status-item">
+                        <span class="label">盘缠</span>
+                        <span class="value money" id="money">2,350 两</span>
+                    </div>
+                    <div class="status-item">
+                        <span class="label">兵刃</span>
+                        <span class="value weapon" id="weapon">青钢剑</span>
+                    </div>
+                    <div class="status-item full-width">
+                        <span class="label">杂物</span>
+                        <div class="items-list" id="items">
+                            <span class="item">回春丹 x3</span>
+                            <span class="item">千年人参 x1</span>
+                            <span class="item">武功秘籍 x2</span>
+                            <span class="item">银票 x5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 要事 -->
+            <div class="status-section quests">
+                <div class="section-title">
+                    <span class="title-text">要事</span>
+                    <div class="ink-decoration"></div>
+                </div>
+                <div class="quest-content">
+                    <div class="quest-item main-quest">
+                        <div class="quest-header">
+                            <span class="quest-type">主线</span>
+                            <span class="quest-title" id="main-quest-title">寻找失踪的师父</span>
+                        </div>
+                        <div class="quest-description" id="main-quest-desc">
+                            师父三日前外出采药，至今未归。据村民所言，曾见师父往西山方向而去，恐有不测。
+                        </div>
+                    </div>
+                    <div class="quest-item side-quest">
+                        <div class="quest-header">
+                            <span class="quest-type">支线</span>
+                            <span class="quest-title" id="side-quest">帮助村民找回丢失的牛羊</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 书卷底部装饰 -->
+        <div class="scroll-bottom"></div>
+    </div>
+
+    <!-- 背景水墨效果 -->
+    <div class="ink-background">
+        <div class="ink-spot ink-spot-1"></div>
+        <div class="ink-spot ink-spot-2"></div>
+        <div class="ink-spot ink-spot-3"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="config-example.js"></script>
+</body>
+</html>
